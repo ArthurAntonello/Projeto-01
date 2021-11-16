@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="Meu primeiro projeto">
+      <meta name="keywords" content="HTML, CSS, Javascript?">
+      <meta name="author" content="Arthur Antonello">
+    <title>Meu projeto1</title>
+    <script src="static/js/script.js"></script>
+    <!-- <img src="static/img/miar.jpg" alt="gato" /> -->
+    <link rel="stylesheet" href="static/css/style.css" />
+</head>
+<body>
+    <h2> Primeiro projeto HTML</h2>
+    <form name="meu_form"> 
+        <h2> Projeto formulário</h2>
+        <label for="name">Nome:</label>
+        <input type="text" id="nomeid" placeholder="Primeiro nome" name="name" required="required" /><br><br>
+
+        <label for="fone">Telefone:</label>
+        <input type="tel" id="foneid" placeholder="(XX) XXXXX-XXXX" name="fone"/><br><br>
+        <!-- Código para aceitar apenas números -- <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /> -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="emailid" placeholder="exemplo@exemplo.com" name="email" required="required" /><br><br>
+
+        <textarea placeholder="Faça uma breve descrição sua."></textarea><br><br>
+        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar"/>
+        
+    </form>
+</body>
+</html>
